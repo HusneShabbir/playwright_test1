@@ -48,8 +48,3 @@ async function screenshot({page},i){
   let x= "Latest_CLE_Snips/Screenshot" + i.toString() + ".png"
   await page.screenshot({ path: x});
 }
-
-
-test.only('test_ci', async ({ page }) => {
-  await page.goto('https://www.hotstar.com/in/sports/cricket/tournaments/icc-mens-t20-world-cup-2024/1260164072/sa-crush-afg-to-enter-maiden-wc-final/1540029922/sports-match-highlights/watch');
-});
